@@ -1,0 +1,97 @@
+body {
+    background: url("world.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*img.bg {*/
+/*    !* Set rules to fill background *!*/
+/*    min-height: 100%;*/
+/*    min-width: 1024px;*/
+
+/*    !* Set up proportionate scaling *!*/
+/*    width: 100%;*/
+/*    height: auto;*/
+
+/*    !* Set up positioning *!*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+.quiz-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 1vh;
+
+}
+
+h1 {
+    text-align: center;
+    /*padding-bottom: 50px;*/
+    /*background-color: #ACE189;*/
+    /*border-radius: 50px;*/
+}
+
+.row {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    /*border: 2px solid #1B2711;*/
+    /*border-radius: 15%;*/
+    /*background-color: #ACE189;*/
+    position: relative;
+    transition: 2s ease;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.quiz p {
+    text-align: center;
+    /*margin: 50px ;*/
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+    border: 2px solid #1B2711;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.front {
+    color: #1B2711;
+    background-color: #ACE189;
+    z-index: 2;
+}
+
+.back {
+    color: #ACE189;
+    background-color: #1B2711;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
