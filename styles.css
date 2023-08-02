@@ -1,7 +1,8 @@
 
 body {
     background: url("world.png") no-repeat center fixed;
-    background-size: cover;
+    background-size: contain;
+    /* background-color: rgba(172, 225, 137,.3); */
 }
 
 * {
