@@ -1,3 +1,4 @@
+
 body {
     background: url("world.png") no-repeat center fixed;
     background-size: cover;
@@ -26,15 +27,13 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 1vh;
+    padding-top: 0.3vh;
 
 }
 
 h1 {
     text-align: center;
-    /*padding-bottom: 50px;*/
-    /*background-color: #ACE189;*/
-    /*border-radius: 50px;*/
+    font-size: 35px;
 }
 
 .row {
@@ -50,9 +49,6 @@ h1 {
     width: 200px;
     height: 200px;
     margin: 15px;
-    /*border: 2px solid #1B2711;*/
-    /*border-radius: 15%;*/
-    /*background-color: #ACE189;*/
     position: relative;
     transition: 2s ease;
     backface-visibility: hidden;
@@ -61,7 +57,7 @@ h1 {
 
 .quiz p {
     text-align: center;
-    /*margin: 50px ;*/
+    font-size: 22px;
 }
 
 .front,
@@ -95,3 +91,42 @@ h1 {
     transform: rotateY(180deg);
 }
 
+/* Screen adaptations */
+
+@media only screen and (max-width: 480px) { 
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .row {
+        perspective: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .quiz p {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .row {
+        perspective: none;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .quiz p {
+        font-size: 30px;
+    }
+}
