@@ -58,6 +58,7 @@ h1 {
     -webkit-transition: 2s ease;
     transition: 2s ease;
     -webkit-backface-visibility: hidden;
+    visibility: visible;
     backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
